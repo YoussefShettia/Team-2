@@ -88,3 +88,29 @@ button {
 button:hover {
     background: #0056b3;
 }
+
+
+/* Mason's Moodboard */
+.member-two .moodboard-two {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.member-two .moodboard-item-two {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+}
+
+.member-two .moodboard-item-two img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.member-two .moodboard-item-two p {
+    font-size: 14px;
+    margin-top: 5px;
+}
