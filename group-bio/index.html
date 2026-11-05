@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Bio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Team Name</h1>
+    <img src="img/team-logo.svg" alt="Team Logo" class="team-logo">
+
+    <nav>
+        <button onclick="showSection('bios')">Team Bios</button>
+        <button onclick="showSection('vision')">Team Vision</button>
+    </nav>
+</header>
+
+<div id="bios" class="container">
+    <div class="card member-one">
+        <img class="avatar" src="img/avatar-placeholder.svg" alt="Member 1 photo">
+        <h2>Member Name</h2>
+        <p class="role">Role / Major</p>
+        <button onclick="toggleBio('bio1')">Show Bio</button>
+        <div id="bio1" class="bio">
+            <p>Short bio goes here. Add a few sentences about yourself and your interests in computer science.</p>
+            <h3>Moodboard</h3>
+            <ul class="moodboard">
+                <li><a href="#" target="_blank" rel="noopener">Favorite tool</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Favorite resource</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Influential person</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card member-two">
+        <img class="avatar" src="img/avatar-placeholder.svg" alt="Member 2 photo">
+        <h2>Member Name</h2>
+        <p class="role">Role / Major</p>
+        <button onclick="toggleBio('bio2')">Show Bio</button>
+        <div id="bio2" class="bio">
+            <p>Short bio goes here. Add a few sentences about yourself and your interests in computer science.</p>
+            <h3>Moodboard</h3>
+            <ul class="moodboard">
+                <li><a href="#" target="_blank" rel="noopener">Favorite tool</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Favorite resource</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Influential person</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card member-three">
+        <img class="avatar" src="img/avatar-placeholder.svg" alt="Member 3 photo">
+        <h2>Member Name</h2>
+        <p class="role">Role / Major</p>
+        <button onclick="toggleBio('bio3')">Show Bio</button>
+        <div id="bio3" class="bio">
+            <p>Short bio goes here. Add a few sentences about yourself and your interests in computer science.</p>
+            <h3>Moodboard</h3>
+            <ul class="moodboard">
+                <li><a href="#" target="_blank" rel="noopener">Favorite tool</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Favorite resource</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Influential person</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card member-four">
+        <img class="avatar" src="img/avatar-placeholder.svg" alt="Member 4 photo">
+        <h2>Member Name</h2>
+        <p class="role">Role / Major</p>
+        <button onclick="toggleBio('bio4')">Show Bio</button>
+        <div id="bio4" class="bio">
+            <p>Short bio goes here. Add a few sentences about yourself and your interests in computer science.</p>
+            <h3>Moodboard</h3>
+            <ul class="moodboard">
+                <li><a href="#" target="_blank" rel="noopener">Favorite tool</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Favorite resource</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Influential person</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="vision" class="container" style="display: none;">
+    <div class="vision-card">
+        <h2>Our Mission Statement</h2>
+        <p>Team mission statement goes here. Describe your team's identity, values, goals, and strengths as computer scientists.</p>
+
+        <h2>Team Rules</h2>
+        <ol class="rules">
+            <li>Add your first team rule here.</li>
+            <li>Add your second team rule here.</li>
+            <li>Add your third team rule here.</li>
+            <li>Add your fourth team rule here.</li>
+        </ol>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
