@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notice Engineering Group | Team Bio</title>
-    <link rel="icon" type="image/jpeg" href="img/team-logo.jpg">
+    <title>Team Bio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-    <h1>Notice Engineering Group</h1>
-    <img src="img/team-logo.jpg" alt="Team Logo" class="team-logo">
+    <h1>Team Name</h1>
+    <img src="img/team-logo.svg" alt="Team Logo" class="team-logo">
 
     <nav>
         <button onclick="showSection('bios')">Team Bios</button>
@@ -37,50 +36,11 @@
     </div>
 
     <div class="card member-two">
-        <img class="avatar" src="img/masonface.png" alt="Member 2 photo">
-        <h2>Mason Paccadolmi</h2>
-        <p class="role">Scrum Master / Computer Science</p>
-        <button onclick="toggleBio('bio2')">Show Bio</button>
-        <div id="bio2" class="bio">
-            <p>I am a junior computer science major concentrating in Systems and Networks. I am interested in networking and IT infrastructure.</p>
-            <h3>Moodboard</h3>
-            <div class="moodboard-two">
-            <div class="moodboard-item-two">
-                <img src="img/wiresharklogo.png" alt="Networking and infrastructure">
-                <p>Networking and infrastructure</p>
-            </div>
-
-            <div class="moodboard-item-two">
-                <img src="img/homelab.png" alt="Homelab and self-hosting">
-                <p>Homelab and self-hosting</p>
-            </div>
-        </div>
-        </div>
-    </div>
-
-    <div class="card member-three">
-        <img class="avatar" src="img/kareem.png" alt="Kareem photo">
-        <h2>Kareem</h2>
-        <p class="role">Project Manager / Computer Science</p>
-        <p><a href="https://github.com/KSaifStack" target="_blank" rel="noopener">GitHub: KSaifStack</a></p>
-        <button onclick="toggleBio('bio3')">Show Bio</button>
-        <div id="bio3" class="bio">
-            <p>Kareem is a computer science major and the project manager for Notice Engineering Group. He helps keep the team organized and makes sure work moves forward on schedule.</p>
-            <h3>Moodboard</h3>
-            <ul class="moodboard">
-                <li><a href="https://ninersoftware.com/" target="_blank" rel="noopener">Favorite tool</a></li>
-                <li><a href="https://ninersoftware.com/" target="_blank" rel="noopener">Favorite resource</a></li>
-                <li><a href="https://ninersoftware.com/" target="_blank" rel="noopener">Influential person</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="card member-four">
-        <img class="avatar" src="img/avatar-placeholder.svg" alt="Member 4 photo">
+        <img class="avatar" src="img/avatar-placeholder.svg" alt="Member 2 photo">
         <h2>Member Name</h2>
         <p class="role">Role / Major</p>
-        <button onclick="toggleBio('bio4')">Show Bio</button>
-        <div id="bio4" class="bio">
+        <button onclick="toggleBio('bio2')">Show Bio</button>
+        <div id="bio2" class="bio">
             <p>Short bio goes here. Add a few sentences about yourself and your interests in computer science.</p>
             <h3>Moodboard</h3>
             <ul class="moodboard">
@@ -90,23 +50,66 @@
             </ul>
         </div>
     </div>
+
+    <div class="card member-three">
+        <img class="avatar" src="img/avatar-placeholder.svg" alt="Member 3 photo">
+        <h2>Member Name</h2>
+        <p class="role">Role / Major</p>
+        <button onclick="toggleBio('bio3')">Show Bio</button>
+        <div id="bio3" class="bio">
+            <p>Short bio goes here. Add a few sentences about yourself and your interests in computer science.</p>
+            <h3>Moodboard</h3>
+            <ul class="moodboard">
+                <li><a href="#" target="_blank" rel="noopener">Favorite tool</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Favorite resource</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Influential person</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card member-four">
+
+<img
+    src="img/IMG_8121%20(1).PNG"
+    alt="Courtney Yarborough"
+    class="member-photo"
+>
+        <h2>Courtney Yarborough</h2>
+        <p class="role">Frontend Developer / Computer Science</p>
+        <button onclick="toggleBio('bio4')">Show Bio</button>
+        <div id="bio4" class="bio">
+            <p>I am a senior Computer Science student at UNC Charlotte. I am concentrating in Information Technology and also studying Cybersecurity in my free time.  </p>
+            <h3>Moodboard</h3>
+
+<ul class="moodboard">
+    <li><a href="#" target="_blank" rel="noopener">Favorite tool</a>
+        <img src="img/IAM.webp" alt="Favorite tool">
+    </li>
+
+    <li><a href="#" target="_blank" rel="noopener">Favorite resource</a>
+        <img src="img/DataCamp.png" alt="Favorite resource">
+    </li>
+
+    <li><a href="#" target="_blank" rel="noopener">Influential person</a>
+        <img src="img/Terrence_Howard.webp" alt="Influential person">
+    </li>
+</ul>
+
+        </div>
+    </div>
 </div>
 
 <div id="vision" class="container" style="display: none;">
     <div class="vision-card">
         <h2>Our Mission Statement</h2>
-        <p>We are Notice Engineering Group, a group of computer science students who value curiosity, clear communication, and dependable work. Our goal is to build software that is simple to use, well tested, and useful to real people. We learn from each other, share feedback openly, and treat every problem as a chance to grow. Our strength is turning ideas into clean, working code while keeping the user at the center of every decision.</p>
+        <p>Team mission statement goes here. Describe your team's identity, values, goals, and strengths as computer scientists.</p>
 
         <h2>Team Rules</h2>
         <ol class="rules">
-            <li>Communicate early and ask questions when something is unclear.</li>
-            <li>Respect every teammate's ideas, time, and workload.</li>
-            <li>Do your share of the work and meet agreed deadlines.</li>
-            <li>Review each other's code with kindness and focus on the work, not the person.</li>
-            <li>Test your changes before sharing them.</li>
-            <li>Keep decisions documented so everyone stays informed.</li>
-            <li>Give credit for others' contributions.</li>
-            <li>Resolve disagreements with evidence and discussion, not blame.</li>
+            <li>Add your first team rule here.</li>
+            <li>Add your second team rule here.</li>
+            <li>Add your third team rule here.</li>
+            <li>Add your fourth team rule here.</li>
         </ol>
     </div>
 </div>

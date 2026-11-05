@@ -54,14 +54,6 @@ header nav button:hover {
     transition: transform 0.2s;
 }
 
-.avatar {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
 .card:hover {
     transform: scale(1.05);
 }
@@ -90,27 +82,29 @@ button:hover {
 }
 
 
-/* Mason's Moodboard */
-.member-two .moodboard-two {
+.member-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: contain;
+    object-position: center;
+    background-color: #f1f1f1;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+
+.moodboard li {
     display: flex;
-    gap: 15px;
-    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
 }
 
-.member-two .moodboard-item-two {
-    flex: 1;
-    min-width: 0;
-    text-align: center;
-}
-
-.member-two .moodboard-item-two img {
-    width: 100%;
+.moodboard li img {
+    width: 180px;
     height: 150px;
     object-fit: cover;
-    border-radius: 8px;
-}
-
-.member-two .moodboard-item-two p {
-    font-size: 14px;
-    margin-top: 5px;
+    border-radius: 10px;
 }
