@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Bio</title>
+    <title>Team 2 | Team Bio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-    <h1>Team Name</h1>
-    <img src="img/team-logo.svg" alt="Team Logo" class="team-logo">
+    <img src="img/team-logo.svg" alt="Team 2 logo" class="team-logo">
+    <h1>Team 2</h1>
+    <p class="tagline">&lt;code · build · ship /&gt;</p>
 
     <nav>
         <button onclick="showSection('bios')">Team Bios</button>
@@ -20,81 +22,76 @@
 
 <div id="bios" class="container">
     <div class="card member-one">
-        <img class="avatar" src="img/avatar-placeholder.svg" alt="Member 1 photo">
-        <h2>Member Name</h2>
-        <p class="role">Role / Major</p>
+        <img class="member-photo" src="img/masonface.png" alt="Mason Paccadolmi">
+        <h2><a href="https://www.linkedin.com/in/mason-paccadolmi-83944b333/" target="_blank" rel="noopener">Mason Paccadolmi</a></h2>
+        <p class="role">Instructional Assistant / Computer Science</p>
         <button onclick="toggleBio('bio1')">Show Bio</button>
         <div id="bio1" class="bio">
-            <p>Short bio goes here. Add a few sentences about yourself and your interests in computer science.</p>
+            <p>I am a junior Computer Science student at UNC Charlotte concentrating in Systems &amp; Networks with a minor in Mathematics. I am an Instructional Assistant for Intro to Operating Systems and Networking, Vice President and founding member of CS Create, and a peer mentor for Leadership Fellows. I enjoy learning how things work under the hood and turning technical challenges into practical solutions.</p>
             <h3>Moodboard</h3>
             <ul class="moodboard">
-                <li><a href="#" target="_blank" rel="noopener">Favorite tool</a></li>
-                <li><a href="#" target="_blank" rel="noopener">Favorite resource</a></li>
-                <li><a href="#" target="_blank" rel="noopener">Influential person</a></li>
+                <li><a href="https://www.wireshark.org/" target="_blank" rel="noopener">Favorite tool: Wireshark</a>
+                    <img src="img/wiresharklogo.png" alt="Wireshark logo">
+                </li>
+                <li><a href="https://www.reddit.com/r/homelab/" target="_blank" rel="noopener">Favorite resource: Homelab</a>
+                    <img src="img/homelab.png" alt="Homelab setup">
+                </li>
+                <li><a href="https://en.wikipedia.org/wiki/Linus_Torvalds" target="_blank" rel="noopener">Influential person: Linus Torvalds</a></li>
             </ul>
         </div>
     </div>
 
     <div class="card member-two">
-        <img class="avatar" src="img/avatar-placeholder.svg" alt="Member 2 photo">
-        <h2>Member Name</h2>
-        <p class="role">Role / Major</p>
+        <img class="member-photo" src="img/kareem.png" alt="Kareem Saif">
+        <h2><a href="https://www.linkedin.com/in/kareemsaif/" target="_blank" rel="noopener">Kareem Saif</a></h2>
+        <p class="role">AI Engineer / Computer Science</p>
         <button onclick="toggleBio('bio2')">Show Bio</button>
         <div id="bio2" class="bio">
-            <p>Short bio goes here. Add a few sentences about yourself and your interests in computer science.</p>
+            <p>I am a Computer Science student at UNC Charlotte with a minor in Computer Engineering, and an AI Engineer at Ingersoll Rand. I also founded SearchTern, a platform with 15,000+ curated internship listings and a built-in application tracker. I have loved building computers and software since I was a kid, especially seeing how hardware and software work together to solve real problems.</p>
             <h3>Moodboard</h3>
             <ul class="moodboard">
-                <li><a href="#" target="_blank" rel="noopener">Favorite tool</a></li>
-                <li><a href="#" target="_blank" rel="noopener">Favorite resource</a></li>
-                <li><a href="#" target="_blank" rel="noopener">Influential person</a></li>
+                <li><a href="https://fastapi.tiangolo.com/" target="_blank" rel="noopener">Favorite tool: FastAPI</a></li>
+                <li><a href="https://searchtern.net" target="_blank" rel="noopener">Favorite project: SearchTern</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Steve_Wozniak" target="_blank" rel="noopener">Influential person: Steve Wozniak</a></li>
             </ul>
         </div>
     </div>
 
     <div class="card member-three">
-        <img class="avatar" src="img/avatar-placeholder.svg" alt="Member 3 photo">
-        <h2>Member Name</h2>
-        <p class="role">Role / Major</p>
+        <img class="member-photo" src="img/Youssef's%20Face.png" alt="Youssef Shettia">
+        <h2><a href="https://www.linkedin.com/in/youssef-shettia-337b4a231/" target="_blank" rel="noopener">Youssef Shettia</a></h2>
+        <p class="role">Developer / Computer Science</p>
         <button onclick="toggleBio('bio3')">Show Bio</button>
         <div id="bio3" class="bio">
-            <p>Short bio goes here. Add a few sentences about yourself and your interests in computer science.</p>
+            <p>I am a Computer Science student at UNC Charlotte and a developer at SearchTern, where I help build tools that make the internship search easier for students.</p>
             <h3>Moodboard</h3>
             <ul class="moodboard">
-                <li><a href="#" target="_blank" rel="noopener">Favorite tool</a></li>
-                <li><a href="#" target="_blank" rel="noopener">Favorite resource</a></li>
-                <li><a href="#" target="_blank" rel="noopener">Influential person</a></li>
+                <li><a href="https://www.jetbrains.com/pycharm/" target="_blank" rel="noopener">Favorite tool: PyCharm</a></li>
+                <li><a href="https://searchtern.net" target="_blank" rel="noopener">Favorite project: SearchTern</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Guido_van_Rossum" target="_blank" rel="noopener">Influential person: Guido van Rossum</a></li>
             </ul>
         </div>
     </div>
 
     <div class="card member-four">
-
-<img
-    src="img/IMG_8121%20(1).PNG"
-    alt="Courtney Yarborough"
-    class="member-photo"
->
-        <h2>Courtney Yarborough</h2>
+        <img class="member-photo" src="img/IMG_8121%20(1).PNG" alt="Courtney Yarborough">
+        <h2><a href="https://www.linkedin.com/in/courtney-yarborough/" target="_blank" rel="noopener">Courtney Yarborough</a></h2>
         <p class="role">Frontend Developer / Computer Science</p>
         <button onclick="toggleBio('bio4')">Show Bio</button>
         <div id="bio4" class="bio">
-            <p>I am a senior Computer Science student at UNC Charlotte. I am concentrating in Information Technology and also studying Cybersecurity in my free time.  </p>
+            <p>I am a senior Computer Science student at UNC Charlotte. I am concentrating in Information Technology and also studying Cybersecurity in my free time.</p>
             <h3>Moodboard</h3>
-
-<ul class="moodboard">
-    <li><a href="#" target="_blank" rel="noopener">Favorite tool</a>
-        <img src="img/IAM.webp" alt="Favorite tool">
-    </li>
-
-    <li><a href="#" target="_blank" rel="noopener">Favorite resource</a>
-        <img src="img/DataCamp.png" alt="Favorite resource">
-    </li>
-
-    <li><a href="#" target="_blank" rel="noopener">Influential person</a>
-        <img src="img/Terrence_Howard.webp" alt="Influential person">
-    </li>
-</ul>
-
+            <ul class="moodboard">
+                <li><a href="#" target="_blank" rel="noopener">Favorite tool</a>
+                    <img src="img/IAM.webp" alt="Favorite tool">
+                </li>
+                <li><a href="#" target="_blank" rel="noopener">Favorite resource</a>
+                    <img src="img/DataCamp.png" alt="Favorite resource">
+                </li>
+                <li><a href="#" target="_blank" rel="noopener">Influential person</a>
+                    <img src="img/Terrence_Howard.webp" alt="Influential person">
+                </li>
+            </ul>
         </div>
     </div>
 </div>
@@ -102,17 +99,22 @@
 <div id="vision" class="container" style="display: none;">
     <div class="vision-card">
         <h2>Our Mission Statement</h2>
-        <p>Team mission statement goes here. Describe your team's identity, values, goals, and strengths as computer scientists.</p>
+        <p class="mission">Team 2 is a group of UNC Charlotte computer scientists who come from different corners of the field: systems and networking, AI engineering, full-stack development and cybersecurity. We believe the best software comes from understanding how things work under the hood and building tools that solve real problems for real people. Our goal is to ship clean, well-tested, well-documented code, learn from each other along the way, and leave every project better than we found it.</p>
 
         <h2>Team Rules</h2>
         <ol class="rules">
-            <li>Add your first team rule here.</li>
-            <li>Add your second team rule here.</li>
-            <li>Add your third team rule here.</li>
-            <li>Add your fourth team rule here.</li>
+            <li>Communicate early: if you're stuck or behind, tell the team in the group chat right away.</li>
+            <li>Work on your own branch and open a pull request. Never push straight to main.</li>
+            <li>Review each other's code respectfully. Critique the code, not the person.</li>
+            <li>Meet deadlines we agree on, and split work evenly so everyone commits.</li>
+            <li>Keep secrets (passwords, API keys) out of the repo.</li>
         </ol>
     </div>
 </div>
+
+<footer>
+    <p>Built by Mason Paccadolmi, Kareem Saif, Youssef Shettia &amp; Courtney Yarborough</p>
+</footer>
 
 <script src="script.js"></script>
 
