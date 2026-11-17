@@ -4,6 +4,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from .routers import index as indexRoute
 from .models import model_loader
 from .dependencies.config import conf
+from database import Base, engine
+from model_loader import load_models
+
+load_models()
+Base.metadata.create_all(bind=engine)
 
 
 app = FastAPI()

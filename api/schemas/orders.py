@@ -1,28 +1,26 @@
 from datetime import datetime
-from typing import Optional
-from pydantic import BaseModel
-from .order_details import OrderDetail
-
-
+from decimal import Decimal
+from pydantic import BaseModel, ConfigDict, Field
+from schemas.order_item import OrderItemRead
+from schemas.payment import PaymentRead
 
 class OrderBase(BaseModel):
-    customer_name: str
-    description: Optional[str] = None
+    user_id: int
+    status: str = Field(default="pending", max_length=50)
+    delivery_address: str | None = None
+    notes: str | None = None
 
-
-class OrderCreate(OrderBase):
-    pass
-
-
+class OrderCreate(OrderBase): pass
 class OrderUpdate(BaseModel):
-    customer_name: Optional[str] = None
-    description: Optional[str] = None
+    status: str | None = Field(default=None, max_length=50)
+    delivery_address: str | None = None
+    notes: str | None = None
 
-
-class Order(OrderBase):
+class OrderRead(OrderBase):
+    model_config = ConfigDict(from_attributes=True)
     id: int
-    order_date: Optional[datetime] = None
-    order_details: list[OrderDetail] = None
-
-    class ConfigDict:
-        from_attributes = True
+    total_amount: Decimal
+    created_at: datetime
+    updated_at: datetime
+    items: list[OrderItemRead] = []
+    payment: PaymentRead | None = None
